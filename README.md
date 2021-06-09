@@ -48,7 +48,6 @@ you've just cloned!!
 
 ## Special Thanks to
 * [`adiwajshing/Baileys`](https://github.com/adiwajshing/Baileys)
-## Special Thanks to
 * [`MhankBarBar`](https://github.com/mhankbarbar)
 
 ## Group
