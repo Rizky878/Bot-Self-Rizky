@@ -8,10 +8,10 @@
 <h1><td><a class='text-white' href='https://github.com/Rizky878'>Recode by Rizky</a></td></h1>
 </p>
 <p align="center">
-<a href="https://github.com/Rizky878/followers"><img title="Followers" src="https://img.shields.io/github/followers/mhankbarbar?color=blue&style=flat-square"></a>
-<a href="https://github.com/Rizky878/bot-group/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/mhankbarbar/termux-wabot?color=red&style=flat-square"></a>
-<a href="https://github.com/Rizky878/bot-group/network/members"><img title="Forks" src="https://img.shields.io/github/forks/mhankbarbar/termux-wabot?color=red&style=flat-square"></a>
-<a href="https://github.com/Rizky878/bot-group/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/mhankbarbar/termux-wabot?label=Watchers&color=blue&style=flat-square"></a>
+<a href="https://github.com/Rizky878/followers"><img title="Followers" src="https://img.shields.io/github/followers/Rizky878?color=blue&style=flat-square"></a>
+<a href="https://github.com/Rizky878/bot-group/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/Rizky878/bot-group?color=red&style=flat-square"></a>
+<a href="https://github.com/Rizky878/bot-group/network/members"><img title="Forks" src="https://img.shields.io/github/forks/Rizky878/bot-group?color=red&style=flat-square"></a>
+<a href="https://github.com/Rizky878/bot-group/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/Rizky878/bot-group?label=Watchers&color=blue&style=flat-square"></a>
 </p>
 
 ## Clone this project
