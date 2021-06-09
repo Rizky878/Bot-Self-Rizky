@@ -17,7 +17,7 @@
 ```bash
 > pkg install
 > pkg update
-pkg install nodejs
+> pkg install nodejs
 ```
 <br>
 <br>Yang pastinya downlaod termux dulu om<br>kalo jalanin di cmd kurang tau hehe<be>
