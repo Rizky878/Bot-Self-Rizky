@@ -13,7 +13,7 @@
 <a href="https://github.com/Rizky878/bot-group/network/members"><img title="Forks" src="https://img.shields.io/github/forks/Rizky878/bot-group?color=red&style=flat-square"></a>
 <a href="https://github.com/Rizky878/bot-group/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/Rizky878/bot-group?label=Watchers&color=blue&style=flat-square"></a>
 </p>
-
+<br>Yang pastinya downlaod termux dulu om<br>kalo jalanin di cmd kurang tau hehe<be>
 ## Clone this project
 
 ```bash
