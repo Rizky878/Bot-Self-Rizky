@@ -57,7 +57,7 @@ Make sure your bot is on!!
 
 ## Jika Ada yang merasa tidak enak atau marah karna diupload:
 Kami akan menghapus github ini 
-chat [`Whatsapp`](wa.me/6282387804410) disini
+chat [`Whatsapp`](https://wa.me/6282387804410) disini
 Jangan asal bully kalo tidak ada salah!!
 
 
