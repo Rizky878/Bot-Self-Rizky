@@ -8,6 +8,9 @@
 <h1><td><a class='text-white' href='https://github.com/Rizky878'>Recode by Rizky</a></td></h1>
 </p>
 <p align="center">
+<h1><td><a class='text-white' href='https://wa.me/6282387804410'>JIKA TIDAK TERIMA DI UPLOAD LAPOR KE WHATSAPP SAYA NANTI REPOSITORIES INI SAYA HAPUS!!</a></td></h1>
+</p>
+<p align="center">
 <a href="https://github.com/Rizky878/followers"><img title="Followers" src="https://img.shields.io/github/followers/mhankbarbar?color=blue&style=flat-square"></a>
 <a href="https://github.com/Rizky878/bot-group/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/Rizky878/bot-group?color=red&style=flat-square"></a>
 <a href="https://github.com/Rizky878/bot-group/network/members"><img title="Forks" src="https://img.shields.io/github/forks/Rizky878/bot-group?color=red&style=flat-square"></a>
