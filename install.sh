@@ -17,6 +17,10 @@ npm i cfonts
 npm i emoji-regex
 npm i imgbb-uploader
 npm i spinnies
+npm i awesome-phonenumber
+npm i path
+npm i file-type
+npm i node-fetch
 npm i crypto
 
 echo "[*] All dependencies have been installed, please run the command \"npm start\" to immediately start the script"
