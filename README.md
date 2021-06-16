@@ -58,7 +58,7 @@ Make sure your bot is on!!
 ## Special Thanks to
 * [`adiwajshing/Baileys`](https://github.com/adiwajshing/Baileys)
 * [`MhankBarBar`](https://github.com/mhankbarbar)
-* [`Nurutomo`] (https://github.com/Nurutomo)
+* [`Nurutomo`](https://github.com/Nurutomo)
 
 ## Group
 * [`WhatsApp`](https://chat.whatsapp.com/Bad7NEtEshlApv3BGhJ8KO)
