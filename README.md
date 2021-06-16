@@ -21,12 +21,14 @@
 > git clone https://github.com/Rizky878/bot-group
 ```
 <br>
-<br>
+
+
+</br>
 ## Jika Ada yang merasa tidak enak atau marah karna diupload:
 Kami akan menghapus repositories ini 
 chat [`Whatsapp`](https://wa.me/6282387804410) disini
 Jangan asal bully kalo tidak ada salah!!
-<br><br>
+<br></br>
 ## Install the dependencies:
 Before running the below command, make sure you're in the project directory that
 you've just cloned!!
