@@ -34,6 +34,14 @@ you've just cloned!!
 ```bash
 > npm start
 ```
+## if the error or console does not appear:
+Make sure your bot is on!!
+
+```bash
+> chat wa.me/6282387804410?text=Consolenya+tidak+muncul+bang
+> Jangan spam atuh sakit bang:(
+```
+
 
 ## Features
 
