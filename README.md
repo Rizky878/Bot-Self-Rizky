@@ -13,6 +13,11 @@
 <a href="https://github.com/Rizky878/bot-group/network/members"><img title="Forks" src="https://img.shields.io/github/forks/Rizky878/bot-group?color=red&style=flat-square"></a>
 <a href="https://github.com/Rizky878/bot-group/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/Rizky878/bot-group?label=Watchers&color=blue&style=flat-square"></a>
 </p>
+## Jika Ada yang merasa tidak enak atau marah karna diupload:
+Kami akan menghapus github ini 
+chat [`Whatsapp`](https://wa.me/6282387804410) disini
+Jangan asal bully kalo tidak ada salah!!
+
 <br>
 <br>Yang pastinya downlaod termux dulu om<br>kalo jalanin di cmd kurang tau hehe<be>
 <br><br>## Clone this project
@@ -54,11 +59,6 @@ Make sure your bot is on!!
 |       ✅        |   Open group       |
 |       ✅        |   Close group       |
 |       ✅        |   Owner       |
-
-## Jika Ada yang merasa tidak enak atau marah karna diupload:
-Kami akan menghapus github ini 
-chat [`Whatsapp`](https://wa.me/6282387804410) disini
-Jangan asal bully kalo tidak ada salah!!
 
 
 ## Special Thanks to
