@@ -64,3 +64,4 @@ Make sure your bot is on!!
 * [`WhatsApp`](https://chat.whatsapp.com/Bad7NEtEshlApv3BGhJ8KO)
 ### Donate
 * [`Trakteer`](https://trakteer.id/rizkybot)
+* [`Pulsa`](6285364937006)(Telkomsel)
