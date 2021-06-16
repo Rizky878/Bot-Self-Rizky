@@ -5,7 +5,7 @@
 <a href="#"><img title="bot-group" src="https://img.shields.io/badge/Termux Whatsapp Bot-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
 </p>
 <p align="center">
-<h1><td><a class='text-white' href='https://wa.me/6282387804410'>JIKA TIDAK TERIMA DI UPLOAD LAPOR KE WHATSAPP SAYA NANTI REPOSITORIES INI SAYA HAPUS!!<br><br>SEKIAN TERIMAKASIH<br><br>RIZKY FADILAH</a></td></h1>
+<td><a class='text-white' href='https://wa.me/6282387804410'>JIKA TIDAK TERIMA DI UPLOAD LAPOR KE WHATSAPP SAYA NANTI REPOSITORIES INI SAYA HAPUS!!<br><br>SEKIAN TERIMAKASIH<br><br>RIZKY FADILAH</a></td>
 </p>
 <p align="center">
 <a href="https://github.com/Rizky878/followers"><img title="Followers" src="https://img.shields.io/github/followers/mhankbarbar?color=blue&style=flat-square"></a>
