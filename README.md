@@ -55,6 +55,12 @@ Make sure your bot is on!!
 |       ✅        |   Close group       |
 |       ✅        |   Owner       |
 
+## Jika Ada yang merasa tidak enak atau marah karna diupload:
+Kami akan menghapus github ini 
+chat [`Whatsapp`](wa.me/6282387804410) disini
+Jangan asal bully kalo tidak ada salah!!
+
+
 ## Special Thanks to
 * [`adiwajshing/Baileys`](https://github.com/adiwajshing/Baileys)
 * [`MhankBarBar`](https://github.com/mhankbarbar)
@@ -64,4 +70,4 @@ Make sure your bot is on!!
 * [`WhatsApp`](https://chat.whatsapp.com/Bad7NEtEshlApv3BGhJ8KO)
 ### Donate
 * [`Trakteer`](https://trakteer.id/rizkybot)
-* [`Pulsa`](6285364937006)(Telkomsel)
+* [`Pulsa`] (6285364937006)(Telkomsel)
