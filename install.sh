@@ -21,6 +21,8 @@ npm i awesome-phonenumber
 npm i path
 npm i file-type
 npm i node-fetch
+npm i ms
+npm i parse-ms@2.1.0
 npm i crypto
 
 echo "[*] All dependencies have been installed, please run the command \"npm start\" to immediately start the script"
