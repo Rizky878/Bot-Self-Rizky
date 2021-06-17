@@ -1,9 +1,12 @@
 /*
 ==============
+
 THANKS TO
 MHANKBARBAR
+Nurutomo
 RIZKY FADILAH
 DUINGZ
+
 ==============
 */
  // yang ingin bertanya silahkan chat wa.me/6282387804410
