@@ -59,6 +59,10 @@ Make sure your bot is on!!
 |       ✅        |   Public       |
 |       ✅        |   .. (Eval)       |
 |       ✅        |   Exec       |
+|       ✅        |   Afk (alasan)       |
+|       ✅        |   On (kembali dari afk       |
+|       ✅        |   Function nurutomo       |
+|       ❌        |   toimg       |
 
 
 ## Special Thanks to
