@@ -60,7 +60,7 @@ Make sure your bot is on!!
 |       ✅        |   .. (Eval)       |
 |       ✅        |   Exec       |
 |       ✅        |   Afk (alasan)       |
-|       ✅        |   On (kembali dari afk       |
+|       ✅        |   On (kembali dari afk)       |
 |       ✅        |   Function nurutomo       |
 |       ❌        |   toimg       |
 
