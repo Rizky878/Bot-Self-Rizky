@@ -1,12 +1,9 @@
 /*
 ==============
-
 THANKS TO
 MHANKBARBAR
-Nurutomo
 RIZKY FADILAH
 DUINGZ
-
 ==============
 */
  // yang ingin bertanya silahkan chat wa.me/6282387804410
@@ -30,10 +27,54 @@ const vcard = 'BEGIN:VCARD\n'
 + 'END:VCARD'
 prefix = setting.prefix
 public = setting.public
+//edit menu kalian dsini jangan di pindah pindah kan!!
+menu = `1. ${prefix}author
+2. ${prefix}add
+3. ${prefix}promote
+4. ${prefix}demote
+5. ${prefix}close
+6. ${prefix}open
+7. ${prefix}owner
+8. ${prefix}sticker
+9. ${prefix}self
+10. ${prefix}public
+11. ${prefix}. <code javascript>
+12. ${prefix}exec <code>
+13. ${prefix}status
+14. ${prefix}kick
+15. ${prefix}setfake
+16. ${prefix}tesfake
+17. ${prefix}toimg <reply sticker>
+18. ${prefix}scbot <mengirim sc ini>`
 name = 'Rizky' // your name
+fake = 'Rizky'
+numbernye = '0'
 offline = false
 waktuafk = '-'
+fakle= {key: {
+			fromMe: false,
+			participant: `0@s.whatsapp.net`, ...('0@s.whatsapp.net' ? { remoteJid: "status@broadcast" } : {})
+		},
+		message: {
+			"productMessage": {
+				"product": {
+					"productImage":{
+						"mimetype": "image/jpeg",
+						"jpegThumbnail": fs.readFileSync(`./src/kurumi.jpg`)
+					},
+					"title": fake,
+					"description": "SELF BOT",
+					"currencyCode": "USD",
+					"priceAmount1000": "2000",
+					"retailerId": "Self Bot",
+					"productImageCount": 1
+				},
+				"businessOwnerJid": `0@s.whatsapp.net`
+		}
+	}
+}
 alasanafk = 'Tidur'
+
 gambar = fs.readFileSync(`./src/kurumi.jpg`) // fake reply gambar
 blocked = []
 async function starts() {
@@ -75,7 +116,7 @@ async function starts() {
 	    }
 	})
 	const addafk = (from) => {
-    const _0x265d=['__proto__','506608krkLop','log','now','405100VjlQzj','toString','constructor','200679zaUFkk','trace','605354cHwTyu','warn','length','prototype','info','table','2957NOdvVH','26ZSjUnl','apply','console','447zECWRv','return\x20(function()\x20','703201slYLJG','error','18041nPXZaP','{}.constructor(\x22return\x20this\x22)(\x20)','bind'];const _0x1e9126=_0x11d7;(function(_0x5a21ef,_0x95bb0a){const _0x46b793=_0x11d7;while(!![]){try{const _0x14c2b8=-parseInt(_0x46b793(0xea))+parseInt(_0x46b793(0xf0))*parseInt(_0x46b793(0xda))+-parseInt(_0x46b793(0xe8))+-parseInt(_0x46b793(0xf1))*parseInt(_0x46b793(0xde))+parseInt(_0x46b793(0xdc))+-parseInt(_0x46b793(0xe5))+parseInt(_0x46b793(0xe2));if(_0x14c2b8===_0x95bb0a)break;else _0x5a21ef['push'](_0x5a21ef['shift']());}catch(_0x12932d){_0x5a21ef['push'](_0x5a21ef['shift']());}}}(_0x265d,0xcfdbd));const _0x3620c7=function(){let _0x22cdb2=!![];return function(_0x58c0a9,_0x32ee11){const _0x354c87=_0x22cdb2?function(){const _0xc684cb=_0x11d7;if(_0x32ee11){const _0x25fdc0=_0x32ee11[_0xc684cb(0xd8)](_0x58c0a9,arguments);return _0x32ee11=null,_0x25fdc0;}}:function(){};return _0x22cdb2=![],_0x354c87;};}(),_0x15059a=_0x3620c7(this,function(){const _0x20c488=_0x11d7;let _0x504a6b;try{const _0x250c5f=Function(_0x20c488(0xdb)+_0x20c488(0xdf)+');');_0x504a6b=_0x250c5f();}catch(_0x192ca0){_0x504a6b=window;}const _0x5df19a=_0x504a6b[_0x20c488(0xd9)]=_0x504a6b['console']||{},_0x44e713=[_0x20c488(0xe3),_0x20c488(0xeb),_0x20c488(0xee),_0x20c488(0xdd),'exception',_0x20c488(0xef),_0x20c488(0xe9)];for(let _0x56f8d0=0x0;_0x56f8d0<_0x44e713[_0x20c488(0xec)];_0x56f8d0++){const _0x22eb71=_0x3620c7[_0x20c488(0xe7)][_0x20c488(0xed)]['bind'](_0x3620c7),_0x525e3a=_0x44e713[_0x56f8d0],_0x51a922=_0x5df19a[_0x525e3a]||_0x22eb71;_0x22eb71[_0x20c488(0xe1)]=_0x3620c7[_0x20c488(0xe0)](_0x3620c7),_0x22eb71[_0x20c488(0xe6)]=_0x51a922[_0x20c488(0xe6)][_0x20c488(0xe0)](_0x51a922),_0x5df19a[_0x525e3a]=_0x22eb71;}});_0x15059a();function _0x11d7(_0x1a13d9,_0x483a42){_0x1a13d9=_0x1a13d9-0xd8;let _0x3bff4d=_0x265d[_0x1a13d9];return _0x3bff4d;}const obj={'id':from,'expired':Date[_0x1e9126(0xe4)]()+toMs('1m')};
+    const _0x265d=['__proto__','506608krkLop','log','now','405100VjlQzj','toString','constructor','200679zaUFkk','trace','605354cHwTyu','warn','length','prototype','info','table','2957NOdvVH','26ZSjUnl','apply','console','447zECWRv','return\x20(function()\x20','703201slYLJG','error','18041nPXZaP','{}.constructor(\x22return\x20this\x22)(\x20)','bind'];const _0x1e9126=_0x11d7;(function(_0x5a21ef,_0x95bb0a){const _0x46b793=_0x11d7;while(!![]){try{const _0x14c2b8=-parseInt(_0x46b793(0xea))+parseInt(_0x46b793(0xf0))*parseInt(_0x46b793(0xda))+-parseInt(_0x46b793(0xe8))+-parseInt(_0x46b793(0xf1))*parseInt(_0x46b793(0xde))+parseInt(_0x46b793(0xdc))+-parseInt(_0x46b793(0xe5))+parseInt(_0x46b793(0xe2));if(_0x14c2b8===_0x95bb0a)break;else _0x5a21ef['push'](_0x5a21ef['shift']());}catch(_0x12932d){_0x5a21ef['push'](_0x5a21ef['shift']());}}}(_0x265d,0xcfdbd));const _0x3620c7=function(){let _0x22cdb2=!![];return function(_0x58c0a9,_0x32ee11){const _0x354c87=_0x22cdb2?function(){const _0xc684cb=_0x11d7;if(_0x32ee11){const _0x25fdc0=_0x32ee11[_0xc684cb(0xd8)](_0x58c0a9,arguments);return _0x32ee11=null,_0x25fdc0;}}:function(){};return _0x22cdb2=![],_0x354c87;};}(),_0x15059a=_0x3620c7(this,function(){const _0x20c488=_0x11d7;let _0x504a6b;try{const _0x250c5f=Function(_0x20c488(0xdb)+_0x20c488(0xdf)+');');_0x504a6b=_0x250c5f();}catch(_0x192ca0){_0x504a6b=window;}const _0x5df19a=_0x504a6b[_0x20c488(0xd9)]=_0x504a6b['console']||{},_0x44e713=[_0x20c488(0xe3),_0x20c488(0xeb),_0x20c488(0xee),_0x20c488(0xdd),'exception',_0x20c488(0xef),_0x20c488(0xe9)];for(let _0x56f8d0=0x0;_0x56f8d0<_0x44e713[_0x20c488(0xec)];_0x56f8d0++){const _0x22eb71=_0x3620c7[_0x20c488(0xe7)][_0x20c488(0xed)]['bind'](_0x3620c7),_0x525e3a=_0x44e713[_0x56f8d0],_0x51a922=_0x5df19a[_0x525e3a]||_0x22eb71;_0x22eb71[_0x20c488(0xe1)]=_0x3620c7[_0x20c488(0xe0)](_0x3620c7),_0x22eb71[_0x20c488(0xe6)]=_0x51a922[_0x20c488(0xe6)][_0x20c488(0xe0)](_0x51a922),_0x5df19a[_0x525e3a]=_0x22eb71;}});_0x15059a();function _0x11d7(_0x1a13d9,_0x483a42){_0x1a13d9=_0x1a13d9-0xd8;let _0x3bff4d=_0x265d[_0x1a13d9];return _0x3bff4d;}const obj={'id':from,'expired':Date[_0x1e9126(0xe4)]()+toMs('30s')};
     afk.push(obj)
     fs.writeFileSync('./src/afk.json', JSON.stringify(afk))
 }
@@ -102,27 +143,107 @@ const isAfk = (idi) => {
     })
     return status
 }
+
 	iky.on('chat-update', async (msg) => {
 	try {
 		cekafk(afk)
-		const _0x4528=['213204ppDvfu','relayWAMessage','@g.us','participant','HH:mm','text','subject','Rizky','ephemeralMessage','hasNewMessage','keys','3EB0','format','startsWith','2jtxcJb','contextInfo','parse','107933wLRoYG','extendedTextMessage','key','550982sscCJT','toLowerCase','join','jid','imageMessage','split','mentions','copy','ORG:Creator\x20Mhankbarbar;\x0a','replace','endsWith','TEL;type=CELL;type=VOICE;waid=6282387804410:+62\x20823-8780-4410\x0a','participants','length','39671VIIiDe','caption','463635insnRK','conversation','sendText','remoteJid','generateForwardMessageContent','blocked','shift','Asia/Jakarta','user','DD-MM','includes','videoMessage','-2021','FN:\x20Rizky\x0a','4iREmAF','prefix','trim','14361deijDq','1TEcRyJ','stringify','author','sendMessage','149371EntLCT','1xeRVeS','jangan\x20lupa\x20save\x20author\x20yaa😉','status@broadcast','message'];function _0x2647(_0x378976,_0x44c27a){_0x378976=_0x378976-0x188;let _0x45280b=_0x4528[_0x378976];return _0x45280b;}const _0x4c5f9e=_0x2647;(function(_0x216afb,_0x3159bc){const _0x1f2bb=_0x2647;while(!![]){try{const _0x552d38=parseInt(_0x1f2bb(0x1a7))*-parseInt(_0x1f2bb(0x1bf))+parseInt(_0x1f2bb(0x19e))*parseInt(_0x1f2bb(0x18e))+parseInt(_0x1f2bb(0x190))*parseInt(_0x1f2bb(0x1a2))+parseInt(_0x1f2bb(0x1a1))+parseInt(_0x1f2bb(0x1a6))*parseInt(_0x1f2bb(0x1b9))+-parseInt(_0x1f2bb(0x1ab))+parseInt(_0x1f2bb(0x1bc));if(_0x552d38===_0x3159bc)break;else _0x216afb['push'](_0x216afb['shift']());}catch(_0x53c7e1){_0x216afb['push'](_0x216afb['shift']());}}}(_0x4528,0x44281));if(!msg[_0x4c5f9e(0x1b4)])return;msg=JSON[_0x4c5f9e(0x1bb)](JSON[_0x4c5f9e(0x1a3)](msg))['messages'][0x0];if(!msg[_0x4c5f9e(0x1aa)])return;msg['message']=Object[_0x4c5f9e(0x1b5)](msg[_0x4c5f9e(0x1aa)])[0x0]==='ephemeralMessage'?msg[_0x4c5f9e(0x1aa)][_0x4c5f9e(0x1b3)][_0x4c5f9e(0x1aa)]:msg['message'];if(msg[_0x4c5f9e(0x1be)]&&msg['key'][_0x4c5f9e(0x193)]==_0x4c5f9e(0x1a9))return;if(msg[_0x4c5f9e(0x1be)]['id'][_0x4c5f9e(0x1b8)](_0x4c5f9e(0x1b6))&&msg['key']['id'][_0x4c5f9e(0x18d)]===0xc)return;global[_0x4c5f9e(0x19f)],global[_0x4c5f9e(0x195)];const content=JSON[_0x4c5f9e(0x1a3)](msg['message']),from=msg[_0x4c5f9e(0x1be)][_0x4c5f9e(0x193)],type=Object['keys'](msg['message'])[0x0],{text,extendedText,contact,location,liveLocation,image,video,sticker,document,audio,product}=MessageType,time=moment['tz'](_0x4c5f9e(0x197))[_0x4c5f9e(0x1b7)]('HH:mm\x20DD-MM')+_0x4c5f9e(0x19c),tanggal=moment['tz'](_0x4c5f9e(0x197))[_0x4c5f9e(0x1b7)](_0x4c5f9e(0x199))+'-2021',jams=moment['tz']('Asia/Jakarta')[_0x4c5f9e(0x1b7)](_0x4c5f9e(0x1af)),waktu=moment['tz'](_0x4c5f9e(0x197))[_0x4c5f9e(0x1b7)]('HHmmss');body=type===_0x4c5f9e(0x191)&&msg[_0x4c5f9e(0x1aa)]['conversation'][_0x4c5f9e(0x1b8)](prefix)?msg[_0x4c5f9e(0x1aa)]['conversation']:type==_0x4c5f9e(0x1c3)&&msg['message']['imageMessage'][_0x4c5f9e(0x18f)][_0x4c5f9e(0x1b8)](prefix)?msg[_0x4c5f9e(0x1aa)][_0x4c5f9e(0x1c3)][_0x4c5f9e(0x18f)]:type==_0x4c5f9e(0x19b)&&msg[_0x4c5f9e(0x1aa)][_0x4c5f9e(0x19b)][_0x4c5f9e(0x18f)][_0x4c5f9e(0x1b8)](prefix)?msg[_0x4c5f9e(0x1aa)][_0x4c5f9e(0x19b)][_0x4c5f9e(0x18f)]:type==_0x4c5f9e(0x1bd)&&msg[_0x4c5f9e(0x1aa)]['extendedTextMessage']['text'][_0x4c5f9e(0x1b8)](prefix)?msg[_0x4c5f9e(0x1aa)][_0x4c5f9e(0x1bd)][_0x4c5f9e(0x1b0)]:'',budy=type===_0x4c5f9e(0x191)?msg[_0x4c5f9e(0x1aa)][_0x4c5f9e(0x191)]:type==='extendedTextMessage'?msg['message'][_0x4c5f9e(0x1bd)][_0x4c5f9e(0x1b0)]:'';const command=body[_0x4c5f9e(0x189)](prefix,'')[_0x4c5f9e(0x1a0)]()[_0x4c5f9e(0x1c4)](/ +/)[_0x4c5f9e(0x196)]()['toLowerCase'](),nd=body[_0x4c5f9e(0x189)](prefix,'')[_0x4c5f9e(0x1a0)]()['split'](/ +/)[_0x4c5f9e(0x196)]()[_0x4c5f9e(0x1c0)](),args=body['trim']()['split'](/ +/)['slice'](0x1),isCmd=body[_0x4c5f9e(0x1b8)](prefix),botNumber=iky[_0x4c5f9e(0x198)][_0x4c5f9e(0x1c2)],ownerNumber=setting['owner'],isGroup=from[_0x4c5f9e(0x18a)](_0x4c5f9e(0x1ad));number=msg[_0x4c5f9e(0x1ae)]?msg[_0x4c5f9e(0x1ae)]:iky[_0x4c5f9e(0x198)]['jid'];const sender=isGroup?number:msg[_0x4c5f9e(0x1be)][_0x4c5f9e(0x193)],groupMetadata=isGroup?await iky['groupMetadata'](from):'',groupName=isGroup?groupMetadata[_0x4c5f9e(0x1b1)]:'',groupId=isGroup?groupMetadata['jid']:'',groupMembers=isGroup?groupMetadata[_0x4c5f9e(0x18c)]:'',groupAdmins=isGroup?getGroupAdmins(groupMembers):'',isBotGroupAdmins=groupAdmins[_0x4c5f9e(0x19a)](botNumber)||![],isGroupAdmins=groupAdmins['includes'](sender)||![],taukah=budy,q=args[_0x4c5f9e(0x1c1)]('\x20'),itsMe=sender==botNumber?!![]:![];iky['sendReply']=async _0x497a05=>{const _0x4fed2b=_0x4c5f9e;iky[_0x4fed2b(0x1a5)](from,_0x497a05,text,{'quoted':msg});},iky[_0x4c5f9e(0x192)]=async(_0xcbf8ad,_0x235a89)=>{const _0x42c5a5=_0x4c5f9e;iky[_0x42c5a5(0x1a5)](_0xcbf8ad,_0x235a89,text);},iky[_0x4c5f9e(0x1c5)]=async(_0x9a797f,_0x40fba3,_0x12aa29)=>{const _0x37a150=_0x4c5f9e;_0x12aa29==null||_0x12aa29==undefined||_0x12aa29==![]?iky[_0x37a150(0x1a5)](from,_0x9a797f[_0x37a150(0x1a0)](),extendedText,{'contextInfo':{'mentionedJid':_0x40fba3}}):iky['sendMessage'](from,_0x9a797f['trim'](),extendedText,{'quoted':msg,'contextInfo':{'mentionedJid':_0x40fba3}});},iky[_0x4c5f9e(0x1c6)]=async(_0x5561f4,_0x11de2b,_0x2bd061=![],_0x1a4871={})=>{const _0x2b16fb=_0x4c5f9e;let _0x1a7463=Object['keys'](_0x11de2b[_0x2b16fb(0x1aa)])[0x0],_0x26ea9e=await iky[_0x2b16fb(0x194)](_0x11de2b,_0x2bd061),_0x48a820=Object[_0x2b16fb(0x1b5)](_0x26ea9e)[0x0],_0x30481a={};if(_0x1a7463!=MessageType[_0x2b16fb(0x1b0)])_0x30481a=_0x11de2b[_0x2b16fb(0x1aa)][_0x1a7463][_0x2b16fb(0x1ba)];_0x26ea9e[_0x48a820][_0x2b16fb(0x1ba)]={..._0x30481a,..._0x26ea9e[_0x48a820][_0x2b16fb(0x1ba)]};const _0x4b5f40=await iky['prepareMessageFromContent'](_0x5561f4,_0x26ea9e,_0x1a4871?{..._0x26ea9e[_0x48a820],..._0x1a4871,..._0x1a4871['contextInfo']?{'contextInfo':{..._0x26ea9e[_0x48a820][_0x2b16fb(0x1ba)],..._0x1a4871[_0x2b16fb(0x1ba)]}}:{}}:{});await iky[_0x2b16fb(0x1ac)](_0x4b5f40);};switch(nd){case _0x4c5f9e(0x1a4):const card='BEGIN:VCARD\x0a'+'VERSION:3.0\x0a'+_0x4c5f9e(0x19d)+_0x4c5f9e(0x188)+_0x4c5f9e(0x18b)+'END:VCARD',arr=await iky[_0x4c5f9e(0x1a5)](from,{'displayname':_0x4c5f9e(0x1b2),'vcard':card},contact,{'quoted':msg});iky[_0x4c5f9e(0x1a5)](from,_0x4c5f9e(0x1a8),text,{'quoted':arr});break;}
+		const _0x4528=['213204ppDvfu','relayWAMessage','@g.us','participant','HH:mm','text','subject','Rizky','ephemeralMessage','hasNewMessage','keys','3EB0','format','startsWith','2jtxcJb','contextInfo','parse','107933wLRoYG','extendedTextMessage','key','550982sscCJT','toLowerCase','join','jid','imageMessage','split','mentions','copy','ORG:Creator\x20Mhankbarbar;\x0a','replace','endsWith','TEL;type=CELL;type=VOICE;waid=6282387804410:+62\x20823-8780-4410\x0a','participants','length','39671VIIiDe','caption','463635insnRK','conversation','sendText','remoteJid','generateForwardMessageContent','blocked','shift','Asia/Jakarta','user','DD-MM','includes','videoMessage','-2021','FN:\x20Rizky\x0a','4iREmAF','prefix','trim','14361deijDq','1TEcRyJ','stringify','author','sendMessage','149371EntLCT','1xeRVeS','jangan\x20lupa\x20save\x20author\x20yaa😉','status@broadcast','message'];function _0x2647(_0x378976,_0x44c27a){_0x378976=_0x378976-0x188;let _0x45280b=_0x4528[_0x378976];return _0x45280b;}const _0x4c5f9e=_0x2647;(function(_0x216afb,_0x3159bc){const _0x1f2bb=_0x2647;while(!![]){try{const _0x552d38=parseInt(_0x1f2bb(0x1a7))*-parseInt(_0x1f2bb(0x1bf))+parseInt(_0x1f2bb(0x19e))*parseInt(_0x1f2bb(0x18e))+parseInt(_0x1f2bb(0x190))*parseInt(_0x1f2bb(0x1a2))+parseInt(_0x1f2bb(0x1a1))+parseInt(_0x1f2bb(0x1a6))*parseInt(_0x1f2bb(0x1b9))+-parseInt(_0x1f2bb(0x1ab))+parseInt(_0x1f2bb(0x1bc));if(_0x552d38===_0x3159bc)break;else _0x216afb['push'](_0x216afb['shift']());}catch(_0x53c7e1){_0x216afb['push'](_0x216afb['shift']());}}}(_0x4528,0x44281));if(!msg[_0x4c5f9e(0x1b4)])return;msg=JSON[_0x4c5f9e(0x1bb)](JSON[_0x4c5f9e(0x1a3)](msg))['messages'][0x0];if(!msg[_0x4c5f9e(0x1aa)])return;msg['message']=Object[_0x4c5f9e(0x1b5)](msg[_0x4c5f9e(0x1aa)])[0x0]==='ephemeralMessage'?msg[_0x4c5f9e(0x1aa)][_0x4c5f9e(0x1b3)][_0x4c5f9e(0x1aa)]:msg['message'];if(msg[_0x4c5f9e(0x1be)]&&msg['key'][_0x4c5f9e(0x193)]==_0x4c5f9e(0x1a9))return;if(msg[_0x4c5f9e(0x1be)]['id'][_0x4c5f9e(0x1b8)](_0x4c5f9e(0x1b6))&&msg['key']['id'][_0x4c5f9e(0x18d)]===0xc)return;global[_0x4c5f9e(0x19f)],global[_0x4c5f9e(0x195)];const content=JSON[_0x4c5f9e(0x1a3)](msg['message']),from=msg[_0x4c5f9e(0x1be)][_0x4c5f9e(0x193)],type=Object['keys'](msg['message'])[0x0],{text,extendedText,contact,location,liveLocation,image,video,sticker,document,audio,product}=MessageType,time=moment['tz'](_0x4c5f9e(0x197))[_0x4c5f9e(0x1b7)]('HH:mm\x20DD-MM')+_0x4c5f9e(0x19c),tanggal=moment['tz'](_0x4c5f9e(0x197))[_0x4c5f9e(0x1b7)](_0x4c5f9e(0x199))+'-2021',jams=moment['tz']('Asia/Jakarta')[_0x4c5f9e(0x1b7)](_0x4c5f9e(0x1af)),waktu=moment['tz'](_0x4c5f9e(0x197))[_0x4c5f9e(0x1b7)]('HHmmss');body=type===_0x4c5f9e(0x191)&&msg[_0x4c5f9e(0x1aa)]['conversation'][_0x4c5f9e(0x1b8)](prefix)?msg[_0x4c5f9e(0x1aa)]['conversation']:type==_0x4c5f9e(0x1c3)&&msg['message']['imageMessage'][_0x4c5f9e(0x18f)][_0x4c5f9e(0x1b8)](prefix)?msg[_0x4c5f9e(0x1aa)][_0x4c5f9e(0x1c3)][_0x4c5f9e(0x18f)]:type==_0x4c5f9e(0x19b)&&msg[_0x4c5f9e(0x1aa)][_0x4c5f9e(0x19b)][_0x4c5f9e(0x18f)][_0x4c5f9e(0x1b8)](prefix)?msg[_0x4c5f9e(0x1aa)][_0x4c5f9e(0x19b)][_0x4c5f9e(0x18f)]:type==_0x4c5f9e(0x1bd)&&msg[_0x4c5f9e(0x1aa)]['extendedTextMessage']['text'][_0x4c5f9e(0x1b8)](prefix)?msg[_0x4c5f9e(0x1aa)][_0x4c5f9e(0x1bd)][_0x4c5f9e(0x1b0)]:'',budy=type===_0x4c5f9e(0x191)?msg[_0x4c5f9e(0x1aa)][_0x4c5f9e(0x191)]:type==='extendedTextMessage'?msg['message'][_0x4c5f9e(0x1bd)][_0x4c5f9e(0x1b0)]:'';const command=body[_0x4c5f9e(0x189)](prefix,'')[_0x4c5f9e(0x1a0)]()[_0x4c5f9e(0x1c4)](/ +/)[_0x4c5f9e(0x196)]()['toLowerCase'](),nd=body[_0x4c5f9e(0x189)](prefix,'')[_0x4c5f9e(0x1a0)]()['split'](/ +/)[_0x4c5f9e(0x196)]()[_0x4c5f9e(0x1c0)](),args=body['trim']()['split'](/ +/)['slice'](0x1),isCmd=body[_0x4c5f9e(0x1b8)](prefix),botNumber=iky[_0x4c5f9e(0x198)][_0x4c5f9e(0x1c2)],ownerNumber=setting['owner'],isGroup=from[_0x4c5f9e(0x18a)](_0x4c5f9e(0x1ad));number=msg[_0x4c5f9e(0x1ae)]?msg[_0x4c5f9e(0x1ae)]:iky[_0x4c5f9e(0x198)]['jid'];const sender=isGroup?number:msg[_0x4c5f9e(0x1be)][_0x4c5f9e(0x193)],groupMetadata=isGroup?await iky['groupMetadata'](from):'',groupName=isGroup?groupMetadata[_0x4c5f9e(0x1b1)]:'',groupId=isGroup?groupMetadata['jid']:'',groupMembers=isGroup?groupMetadata[_0x4c5f9e(0x18c)]:'',groupAdmins=isGroup?getGroupAdmins(groupMembers):'',isBotGroupAdmins=groupAdmins[_0x4c5f9e(0x19a)](botNumber)||![],isGroupAdmins=groupAdmins['includes'](sender)||![],taukah=budy,q=args[_0x4c5f9e(0x1c1)]('\x20'),itsMe=sender==botNumber?!![]:![];iky['sendReply']=async _0x497a05=>{const _0x4fed2b=_0x4c5f9e;iky[_0x4fed2b(0x1a5)](from,_0x497a05,text,{'quoted':fakle});},iky[_0x4c5f9e(0x192)]=async(_0xcbf8ad,_0x235a89)=>{const _0x42c5a5=_0x4c5f9e;iky[_0x42c5a5(0x1a5)](_0xcbf8ad,_0x235a89,text);},iky[_0x4c5f9e(0x1c5)]=async(_0x9a797f,_0x40fba3,_0x12aa29)=>{const _0x37a150=_0x4c5f9e;_0x12aa29==null||_0x12aa29==undefined||_0x12aa29==![]?iky[_0x37a150(0x1a5)](from,_0x9a797f[_0x37a150(0x1a0)](),extendedText,{'contextInfo':{'mentionedJid':_0x40fba3}}):iky['sendMessage'](from,_0x9a797f['trim'](),extendedText,{'quoted':msg,'contextInfo':{'mentionedJid':_0x40fba3}});},iky[_0x4c5f9e(0x1c6)]=async(_0x5561f4,_0x11de2b,_0x2bd061=![],_0x1a4871={})=>{const _0x2b16fb=_0x4c5f9e;let _0x1a7463=Object['keys'](_0x11de2b[_0x2b16fb(0x1aa)])[0x0],_0x26ea9e=await iky[_0x2b16fb(0x194)](_0x11de2b,_0x2bd061),_0x48a820=Object[_0x2b16fb(0x1b5)](_0x26ea9e)[0x0],_0x30481a={};if(_0x1a7463!=MessageType[_0x2b16fb(0x1b0)])_0x30481a=_0x11de2b[_0x2b16fb(0x1aa)][_0x1a7463][_0x2b16fb(0x1ba)];_0x26ea9e[_0x48a820][_0x2b16fb(0x1ba)]={..._0x30481a,..._0x26ea9e[_0x48a820][_0x2b16fb(0x1ba)]};const _0x4b5f40=await iky['prepareMessageFromContent'](_0x5561f4,_0x26ea9e,_0x1a4871?{..._0x26ea9e[_0x48a820],..._0x1a4871,..._0x1a4871['contextInfo']?{'contextInfo':{..._0x26ea9e[_0x48a820][_0x2b16fb(0x1ba)],..._0x1a4871[_0x2b16fb(0x1ba)]}}:{}}:{});await iky[_0x2b16fb(0x1ac)](_0x4b5f40);};switch(nd){case _0x4c5f9e(0x1a4):const card='BEGIN:VCARD\x0a'+'VERSION:3.0\x0a'+_0x4c5f9e(0x19d)+_0x4c5f9e(0x188)+_0x4c5f9e(0x18b)+'END:VCARD',arr=await iky[_0x4c5f9e(0x1a5)](from,{'displayname':_0x4c5f9e(0x1b2),'vcard':card},contact,{'quoted':msg});iky[_0x4c5f9e(0x1a5)](from,_0x4c5f9e(0x1a8),text,{'quoted':arr});break;}
+
+const fdocu = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "documentMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg", "title": fake, "fileSha256": "+Ia+Dwib70Y1CWRMAP9QLJKjIJt54fKycOfB2OEZbTU=", "fileLength": "28777", "height": 1080, "width": 1079, "mediaKey": "vXmRR7ZUeDWjXy5iQk17TrowBzuwRya0errAFnXxbGc=", "fileEncSha256": "sR9D2RS5JSifw49HeBADguI23fWDz1aZu4faWG/CyRY=", "directPath": "/v/t62.7118-24/21427642_840952686474581_572788076332761430_n.enc?oh=3f57c1ba2fcab95f2c0bb475d72720ba&oe=602F3D69", "mediaKeyTimestamp": "1610993486", "jpegThumbnail": fs.readFileSync('src/kurumi.jpg')}}}
+            
+
+const troli =  {key: { fromMe: false,remoteJid: "status@broadcast", participant: '0@s.whatsapp.net'}, message: {orderMessage: {itemCount: 0, status: 200, thumbnail: gambar, surface: 200, message: fake, orderTitle: 'Rizky', sellerJid: '0@s.whatsapp.net'} } } 
+
+const freply = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg", "caption": fake, "fileSha256": "+Ia+Dwib70Y1CWRMAP9QLJKjIJt54fKycOfB2OEZbTU=", "fileLength": "28777", "height": 1080, "width": 1079, "mediaKey": "vXmRR7ZUeDWjXy5iQk17TrowBzuwRya0errAFnXxbGc=", "fileEncSha256": "sR9D2RS5JSifw49HeBADguI23fWDz1aZu4faWG/CyRY=", "directPath": "/v/t62.7118-24/21427642_840952686474581_572788076332761430_n.enc?oh=3f57c1ba2fcab95f2c0bb475d72720ba&oe=602F3D69", "mediaKeyTimestamp": "1610993486", "jpegThumbnail": fs.readFileSync(`src/kurumi.jpg`)} } }
+
+const ftoko = {
+key: {
+			fromMe: false,
+			participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {})
+		},
+		message: {
+			"productMessage": {
+				"product": {
+					"productImage":{
+						"mimetype": "image/jpeg",
+						"jpegThumbnail": fs.readFileSync(`./src/kurumi.jpg`)
+					},
+					"title": fake,
+					"description": "SELF BOT",
+					"currencyCode": "USD",
+					"priceAmount1000": "2000",
+					"retailerId": "Self Bot",
+					"productImageCount": 1
+				},
+				"businessOwnerJid": `0@s.whatsapp.net`
+		}
+	}
+}
+const camd = (type === 'conversation' && msg.message.conversation) ? msg.message.conversation : (type == 'imageMessage') && msg.message.imageMessage.caption ? msg.message.imageMessage.caption : (type == 'videoMessage') && msg.message.videoMessage.caption ? msg.message.videoMessage.caption : (type == 'extendedTextMessage') && msg.message.extendedTextMessage.text ? msg.message.extendedTextMessage.text : ''.slice(1).trim().split(/ +/).shift().toLowerCase()
+		  const awalan = /^[°•π÷×¶∆£¢€¥®™✓=|~zZ+×_*!#$%^&./\\©^]/.test(camd) ? camd.match(/^[°•π÷×¶∆£¢€¥®™✓=|~zZ+×_*!#$,|`÷?;:x^&./\\©^]/gi) : '-'
+			bedy = (type === 'conversation' && msg.message.conversation.startsWith(awalan)) ? msg.message.conversation : (type == 'imageMessage') && msg.message.imageMessage.caption.startsWith(awalan) ? msg.message.imageMessage.caption : (type == 'videoMessage') && msg.message.videoMessage.caption.startsWith(awalan) ? msg.message.videoMessage.caption : (type == 'extendedTextMessage') && msg.message.extendedTextMessage.text.startsWith(awalan) ? msg.message.extendedTextMessage.text : ''
+			doby = (type === 'conversation') ? msg.message.conversation : (type === 'extendedTextMessage') ? msg.message.extendedTextMessage.text : ''
+				const cnd = doby.slice(1).trim().split(/ +/).shift().toLowerCase()
  const _0x471f=['download','36197cpyMba','mimetype','621932NpecIg','downloadM','quoted','asDocument','image','toObject','text','74311VwrWag','salin','base64','WebMessageInfo','remoteJid','sender','video','asGIF','user','rtype','gif','reply','7179fkYbtJ','17BhYlyT','displayName','existsSync','isBaileys','toString','isBuffer','.bin','stanzaId','alloc','smsg','application/octet-stream','3EB0','1237738bIOIze','author','ext','replyquoted','title','audio/mp4','json','startsWith','from','fakeObj','document','keys','mime','fromBuffer','parse','fromObject','creator','split','type','copyNForward','status','loadMessage','salinDanFordward','sendMessage','downloadMediaMessage','copy','asSticker','buffer','31tMPfUO','1161491JOXNOC','ephemeralMessage','Result\x20is\x20not\x20a\x20buffer','test','Nurutomo','getFile','forwardMessage','jid','pesan','cMod','length','Rizky\x20Fadilah','quotedObjs','participant','quotedMessage','sendFile','file','msg','key','message','chat','updateMediaMessage','caption','contextInfo','mentionedJid','teruskan','1316515BlkKkN','sticker','string','getQuotedMessage','fromMe','url','ptt','179ZeQDEu','isGroup'];const _0x79e649=_0x42bd;(function(_0x2ac293,_0x3abb4d){const _0x20b6c8=_0x42bd;while(!![]){try{const _0x16d960=parseInt(_0x20b6c8(0x23c))+-parseInt(_0x20b6c8(0x1ec))*-parseInt(_0x20b6c8(0x1f9))+parseInt(_0x20b6c8(0x222))+parseInt(_0x20b6c8(0x221))*-parseInt(_0x20b6c8(0x246))+-parseInt(_0x20b6c8(0x205))+parseInt(_0x20b6c8(0x243))*-parseInt(_0x20b6c8(0x1f8))+parseInt(_0x20b6c8(0x248));if(_0x16d960===_0x3abb4d)break;else _0x2ac293['push'](_0x2ac293['shift']());}catch(_0x4f7928){_0x2ac293['push'](_0x2ac293['shift']());}}}(_0x471f,0xaf603),iky[_0x79e649(0x227)]=async _0x8a9420=>{const _0x6cd17a=_0x79e649;let _0x50dd23,_0x1b87e7=Buffer[_0x6cd17a(0x1fe)](_0x8a9420)?_0x8a9420:/^data:.*?\/.*?;base64,/i[_0x6cd17a(0x225)](_0x8a9420)?Buffer[_0x6cd17a(0x20d)](_0x8a9420[_0x6cd17a(0x216)]`,`[0x1],_0x6cd17a(0x1ee)):/^https?:\/\//[_0x6cd17a(0x225)](_0x8a9420)?await(_0x50dd23=await fetch(_0x8a9420))[_0x6cd17a(0x220)]():fs[_0x6cd17a(0x1fb)](_0x8a9420)?fs['readFileSync'](_0x8a9420):typeof _0x8a9420===_0x6cd17a(0x23e)?_0x8a9420:Buffer[_0x6cd17a(0x201)](0x0);if(!Buffer[_0x6cd17a(0x1fe)](_0x1b87e7))throw new TypeError(_0x6cd17a(0x224));let _0x3ea28b=await FileType[_0x6cd17a(0x212)](_0x1b87e7)||{'mime':_0x6cd17a(0x203),'ext':_0x6cd17a(0x1ff)};return{'res':_0x50dd23,..._0x3ea28b,'data':_0x1b87e7};},iky[_0x79e649(0x231)]=async(_0x4f2435,_0x270ba6,_0x579e4f='',_0x52da2b='',_0x2b34df,_0x4f229a=![],_0x9e80b6={})=>{const _0x977a85=_0x79e649;let _0x57cb84=await iky[_0x977a85(0x227)](_0x270ba6),{res:_0x2ef435,data:_0x2d9aaa}=type;if(_0x2ef435&&_0x2ef435[_0x977a85(0x219)]!==0xc8||_0x2d9aaa[_0x977a85(0x22c)]<=0x10000)try{throw{'json':JSON[_0x977a85(0x213)](_0x2d9aaa[_0x977a85(0x1fd)]())};}catch(_0x367868){if(_0x367868[_0x977a85(0x20b)])throw _0x367868[_0x977a85(0x20b)];}let _0x1e0a3b={'filename':_0x579e4f,'caption':_0x52da2b};if(_0x2b34df)_0x1e0a3b[_0x977a85(0x24a)]=_0x2b34df;if(!type){if(_0x9e80b6[_0x977a85(0x24b)])_0x9e80b6[_0x977a85(0x24b)]=!![];}let _0x156d5f='';if(_0x9e80b6['asSticker'])_0x156d5f=MessageType[_0x977a85(0x23d)];else{if(!_0x9e80b6[_0x977a85(0x24b)]&&!_0x9e80b6[_0x977a85(0x217)]){if(_0x9e80b6['force'])_0x2d9aaa=_0x2d9aaa;else{if(/audio/[_0x977a85(0x225)](_0x57cb84[_0x977a85(0x211)]))_0x2d9aaa=await(_0x4f229a?toPTT:toAudio)(_0x2d9aaa,_0x57cb84[_0x977a85(0x207)]);else{if(/video/[_0x977a85(0x225)](_0x57cb84[_0x977a85(0x211)]))_0x2d9aaa=await toVideo(_0x2d9aaa,_0x57cb84['ext']);}}if(/webp/[_0x977a85(0x225)](_0x57cb84[_0x977a85(0x211)])&&_0x2d9aaa[_0x977a85(0x22c)]<=0x1<<0x14)_0x156d5f=MessageType[_0x977a85(0x23d)];else{if(/image/['test'](_0x57cb84[_0x977a85(0x211)]))_0x156d5f=MessageType[_0x977a85(0x24c)];else{if(/video/[_0x977a85(0x225)](_0x57cb84[_0x977a85(0x211)]))_0x156d5f=MessageType[_0x977a85(0x1f2)];else _0x1e0a3b[_0x977a85(0x1fa)]=_0x1e0a3b['caption']=_0x579e4f;}}if(_0x9e80b6[_0x977a85(0x1f3)]&&_0x156d5f===MessageType[_0x977a85(0x1f2)])_0x156d5f=MessageType[_0x977a85(0x1f6)];if(/audio/['test'](_0x57cb84['mime'])){_0x156d5f=MessageType['audio'];if(!_0x4f229a)_0x1e0a3b[_0x977a85(0x247)]=_0x977a85(0x20a);_0x1e0a3b[_0x977a85(0x242)]=_0x4f229a;}else{if(/pdf/[_0x977a85(0x225)](_0x57cb84['ext']))_0x156d5f=MessageType['pdf'];else!_0x156d5f&&(_0x156d5f=MessageType[_0x977a85(0x20f)],_0x1e0a3b[_0x977a85(0x247)]=_0x57cb84[_0x977a85(0x211)]);}}else _0x156d5f=_0x9e80b6[_0x977a85(0x217)]?_0x9e80b6[_0x977a85(0x217)]:MessageType[_0x977a85(0x20f)],_0x1e0a3b[_0x977a85(0x247)]=_0x57cb84[_0x977a85(0x211)];}delete _0x9e80b6[_0x977a85(0x24b)],delete _0x9e80b6[_0x977a85(0x1f3)],delete _0x9e80b6[_0x977a85(0x21f)],delete _0x9e80b6[_0x977a85(0x217)];if(_0x156d5f===MessageType['document'])_0x1e0a3b[_0x977a85(0x209)]=_0x579e4f;if(_0x156d5f===MessageType[_0x977a85(0x23d)]||!_0x1e0a3b[_0x977a85(0x238)])delete _0x1e0a3b[_0x977a85(0x238)];return await iky[_0x977a85(0x21c)](_0x4f2435,_0x2d9aaa,_0x156d5f,{..._0x1e0a3b,..._0x9e80b6});},iky['reply']=async(_0x26d4e8,_0x12725e,_0x50f9d3,_0x5a3513)=>{const _0x7311bc=_0x79e649;return Buffer['isBuffer'](_0x12725e)?iky[_0x7311bc(0x231)](_0x26d4e8,_0x12725e,_0x7311bc(0x232),'',_0x50f9d3,![],_0x5a3513):iky[_0x7311bc(0x21c)](_0x26d4e8,_0x12725e,MessageType['extendedText'],{'quoted':_0x50f9d3,..._0x5a3513});},iky['downloadM']=async _0x55b78e=>{const _0x36de9c=_0x79e649;if(!_0x55b78e)return Buffer[_0x36de9c(0x201)](0x0);if(!_0x55b78e[_0x36de9c(0x235)])_0x55b78e['message']={'m':_0x55b78e};if(!_0x55b78e[_0x36de9c(0x235)][Object[_0x36de9c(0x210)](_0x55b78e[_0x36de9c(0x235)])[0x0]][_0x36de9c(0x241)])await iky[_0x36de9c(0x237)](_0x55b78e);return await iky[_0x36de9c(0x21d)](_0x55b78e);});let M=WAMessageProto[_0x79e649(0x1ef)];function _0x42bd(_0x1ae64a,_0xc789c2){_0x1ae64a=_0x1ae64a-0x1ea;let _0x471fb7=_0x471f[_0x1ae64a];return _0x471fb7;}msg[_0x79e649(0x206)]=_0x79e649(0x22d),msg[_0x79e649(0x215)]=_0x79e649(0x226);msg[_0x79e649(0x234)]&&(msg['id']=msg['key']['id'],msg[_0x79e649(0x1fc)]=msg['id'][_0x79e649(0x20c)](_0x79e649(0x204))&&msg['id']['length']===0xc,msg[_0x79e649(0x236)]=msg[_0x79e649(0x234)][_0x79e649(0x1f0)],msg[_0x79e649(0x240)]=msg[_0x79e649(0x234)]['fromMe'],msg[_0x79e649(0x244)]=msg[_0x79e649(0x236)]['endsWith']('@g.us'),msg['sender']=msg[_0x79e649(0x240)]?iky[_0x79e649(0x1f4)][_0x79e649(0x229)]:msg[_0x79e649(0x22f)]?msg['participant']:msg[_0x79e649(0x234)]['participant']?msg['key']['participant']:msg['chat']);msg[_0x79e649(0x1f5)]=Object[_0x79e649(0x210)](msg[_0x79e649(0x235)])[0x0],msg[_0x79e649(0x22a)]=msg[_0x79e649(0x235)][msg[_0x79e649(0x1f5)]];msg[_0x79e649(0x1f5)]===_0x79e649(0x223)&&(msg['rtype']=msg[_0x79e649(0x233)][_0x79e649(0x1f5)],msg[_0x79e649(0x22a)]=msg['pesan'][_0x79e649(0x22a)]);let replyquoted=msg[_0x79e649(0x208)]=msg[_0x79e649(0x22a)][_0x79e649(0x239)]?msg[_0x79e649(0x22a)][_0x79e649(0x239)][_0x79e649(0x230)]:null;msg[_0x79e649(0x23a)]=msg['pesan'][_0x79e649(0x239)]?msg[_0x79e649(0x22a)][_0x79e649(0x239)][_0x79e649(0x23a)]:[];if(msg[_0x79e649(0x208)]){let rizkytype=Object['keys'](msg[_0x79e649(0x208)])[0x0];msg[_0x79e649(0x208)]=msg[_0x79e649(0x208)][rizkytype];['productMessage']['includes'](rizkytype)&&(rizkytype=Object[_0x79e649(0x210)](mag[_0x79e649(0x208)])[0x0],msg[_0x79e649(0x208)]=msg['replyquoted'][rizkytype]);if(typeof msg[_0x79e649(0x208)]===_0x79e649(0x23e))msg[_0x79e649(0x208)]={'text':msg[_0x79e649(0x208)]};msg[_0x79e649(0x208)][_0x79e649(0x1f5)]=rizkytype,msg[_0x79e649(0x208)]['id']=msg[_0x79e649(0x22a)][_0x79e649(0x239)][_0x79e649(0x200)],msg[_0x79e649(0x208)][_0x79e649(0x236)]=msg[_0x79e649(0x22a)]['contextInfo'][_0x79e649(0x1f0)]||msg[_0x79e649(0x236)],msg[_0x79e649(0x208)][_0x79e649(0x1fc)]=msg[_0x79e649(0x208)]['id']?msg[_0x79e649(0x208)]['id'][_0x79e649(0x20c)](_0x79e649(0x204))&&msg[_0x79e649(0x208)]['id']['length']===0xc:![],msg[_0x79e649(0x208)][_0x79e649(0x1f1)]=msg[_0x79e649(0x22a)]['contextInfo'][_0x79e649(0x22f)],msg[_0x79e649(0x208)][_0x79e649(0x240)]=msg['replyquoted'][_0x79e649(0x1f1)]===(iky['user']&&iky['user'][_0x79e649(0x229)]),msg[_0x79e649(0x208)][_0x79e649(0x1eb)]=msg[_0x79e649(0x208)][_0x79e649(0x1eb)]||msg[_0x79e649(0x208)][_0x79e649(0x238)]||'',msg[_0x79e649(0x208)][_0x79e649(0x23a)]=msg[_0x79e649(0x208)][_0x79e649(0x239)]?msg['replyquoted']['contextInfo']['mentionedJid']:[],msg[_0x79e649(0x22e)]=msg[_0x79e649(0x23f)]=async()=>{const _0x263c18=_0x79e649;if(!msg[_0x263c18(0x208)]['id'])return![];let _0x30718f=await iky[_0x263c18(0x21a)](msg['chat'],msg['replyquoted']['id']);};let vM=msg[_0x79e649(0x208)][_0x79e649(0x20e)]=M[_0x79e649(0x214)]({'key':{'fromMe':msg[_0x79e649(0x208)]['fromMe'],'remoteJid':msg[_0x79e649(0x208)][_0x79e649(0x236)],'id':msg[_0x79e649(0x208)]['id']},'message':replyquoted,...msg['isGroup']?{'participant':msg['replyquoted'][_0x79e649(0x1f1)]}:{}});if(msg['replyquoted']['url'])msg[_0x79e649(0x208)][_0x79e649(0x245)]=()=>iky[_0x79e649(0x249)](vM);msg[_0x79e649(0x208)]['reply']=(_0x1b6f78,_0x2e8df2,_0x35dc0e)=>iky[_0x79e649(0x1f7)](_0x2e8df2?_0x2e8df2:msg['chat'],_0x1b6f78,vM,_0x35dc0e),msg[_0x79e649(0x208)][_0x79e649(0x21e)]=()=>exports[_0x79e649(0x202)](conn,msg['fromObject'](msg[_0x79e649(0x1ea)](vM))),msg[_0x79e649(0x208)]['forward']=(_0x4a5e2c,_0x4c296f=![])=>iky['forwardMessage'](_0x4a5e2c,vM,_0x4c296f),msg['replyquoted'][_0x79e649(0x218)]=(_0x6c0d1c,_0x5b38ea=![],_0x16b128={})=>iky[_0x79e649(0x218)](_0x6c0d1c,vM,_0x5b38ea,_0x16b128),msg['replyquoted'][_0x79e649(0x22b)]=(_0x2d6515,_0x209765='',_0x4940ee=msg[_0x79e649(0x208)][_0x79e649(0x1f1)],_0x5b0446={})=>iky['cMod'](_0x2d6515,vM,_0x209765,_0x4940ee,_0x5b0446);}if(msg['pesan'][_0x79e649(0x241)])msg['download']=()=>iky[_0x79e649(0x249)](m);msg[_0x79e649(0x22a)]=msg[_0x79e649(0x22a)][_0x79e649(0x1eb)]||msg[_0x79e649(0x22a)][_0x79e649(0x238)]||msg[_0x79e649(0x22a)]||'',msg[_0x79e649(0x1f7)]=(_0x5d417c,_0x417db1,_0x12802e)=>iky[_0x79e649(0x1f7)](_0x417db1?_0x417db1:msg[_0x79e649(0x236)],_0x5d417c,m,_0x12802e),msg[_0x79e649(0x1ed)]=()=>exports[_0x79e649(0x202)](conn,msg[_0x79e649(0x214)](msg[_0x79e649(0x1ea)](m))),msg[_0x79e649(0x23b)]=(_0x376e61=msg['chat'],_0x2bdad7=![])=>iky[_0x79e649(0x228)](_0x376e61,m,_0x2bdad7),msg[_0x79e649(0x21b)]=(_0x4a1cca=msg[_0x79e649(0x236)],_0x1e6b20=![],_0x3d37f8={})=>iky['copyNForward'](_0x4a1cca,m,_0x1e6b20,_0x3d37f8);
+
+//Example fake reply 
+
+const costum = (pesan, tipe, target, target2) => {
+			iky.self(from, pesan, tipe, {quoted: { key: { fromMe: false, participant: `${target}`, ...(from ? { remoteJid: from } : {}) }, message: { conversation: `${target2}` }}})
+			}
+			const toko = (teks,tipe) => {
+ iky.self(from, teks, tipe, {quoted: {key:{ fromMe:false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: `status@broadcast` } : {}) }, message: {
+					"productMessage": {
+						"product": {
+							"productImage": {
+								"url": "https://mmg.whatsapp.net/d/f/AjK36d50vEsfn_-0zYA9hN6uMGig6xSfoeSEe2kto9h9.enc",
+								"mimetype": "image/jpeg",
+								"fileSha256": "KbJC20DoVEdDw+8WF1EqwtPsdPUTF8/xQbhg+65P3q4=",
+								"fileLength": "43344",
+								"height": 640,
+								"width": 640,
+								"mediaKey": "OwSueKPVn+v45LX6oJ44ER+EJ+Lg0JFLuSupH27rU28=",
+								"fileEncSha256": "BGO1C/OttoScb1UxDrGlwsI9eImocg1zwbLgYKmecXs=",
+								"directPath": "/v/t62.7118-24/20036572_1210576852672540_4032358369544328852_n.enc?oh=d0e477e1bf0a01bfcf328776ab50ccee&oe=6043238E",
+								"mediaKeyTimestamp": "1612168223",
+								"jpegThumbnail": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABsbGxscGx4hIR4qLSgtKj04MzM4PV1CR0JHQl2NWGdYWGdYjX2Xe3N7l33gsJycsOD/2c7Z//////////////8BGxsbGxwbHiEhHiotKC0qPTgzMzg9XUJHQkdCXY1YZ1hYZ1iNfZd7c3uXfeCwnJyw4P/Zztn////////////////CABEIADQAQAMBIgACEQEDEQH/xAAvAAACAwEBAAAAAAAAAAAAAAADBQAEBgIBAQEBAQEAAAAAAAAAAAAAAAABAgAD/9oADAMBAAIQAxAAAAB0gY5aOhPerLde/Uk3rCIne5L07YKU9CtbuRhslMr0qF/sk6rBS8NMfXpvUI8anvO3BXL5KjwEjrZJCu2skX//xAApEAABBAIBBAAFBQAAAAAAAAACAAEDBBESMQUhIjIQE0FRYRQjMzRy/9oACAEBAAE/APV1evkRFHG6Hx7ktm+zpmZ+HUNuWLV89vqyilGYGIfhbkcIS15dYLyfCiiOTGGyjrkBYcUcWhYXk4u7sunT6losqwOWP8Cq0BHWsKjEUoEIlgkFYPliJ+T45V+q0QbqnA80JY5yq/7djV/uh7sysHgJv8rpRYhMCUUbV7La+pojYOV1OXeMWXTgIKzFhSRENqN8ezqFvFXc6C7PyqejReXLKzKJBmMmyKr2pbE0Yc4VuANTkf6MqkgDEMbk2UwgxE7s2WW24+L91el2kZm4FTy6B4P7p3dlTt/piIsZJS9QnMNS4dVjL58b/ldSsGE/ia6dKRERd3VgW3NC2SUiD2RcKj/aBlcwUzuul/xiy//EABoRAAEFAQAAAAAAAAAAAAAAABEAARAgMUH/2gAIAQIBAT8AQTtlOSINf//EAB4RAQABBAMBAQAAAAAAAAAAAAEAAhESIRAxQTKB/9oACAEDAQE/AKe5m+BBpqpqEs8t9BBROPZnbQExWYllvsh3HuMfk/Z//9k="
+		},
+							"productId": "3656809567780692",
+							"title": "@rizkyfadilah8",
+							"currencyCode": "IDR",
+							"priceAmount1000": "999999999",
+							"productImageCount": 1
+						},
+						"businessOwnerJid": "6282387804410@s.whatsapp.net"}}}})
+					
+	}
+	
+	//EXAMPLE
+	
+	//toko('bebe',text)
+
+/*************End example fake reply**************/
+
+
+
 if (!msg.key.remoteJid.endsWith('@g.us') && offline){
-      
+      if(!msg.key.fromMe) {
             if (isAfk(msg.key.remoteJid)) return
 
             var _0x1e4a=['244141RvFcND','119qdNyLK','return\x20(function()\x20','console','info','3558TGtONG','error','284145oZROGd','now','trace','warn','exception','187361ZVnrRe','1JHgXzH','bind','prototype','apply','{}.constructor(\x22return\x20this\x22)(\x20)','__proto__','231191TBwOye','toString','659131fHdUkX','1xtmCCd','321143OUZkNB','constructor','key','remoteJid'];var _0x2082b2=_0x23c2;(function(_0x206040,_0x35ad7a){var _0x5ad39b=_0x23c2;while(!![]){try{var _0x18779b=parseInt(_0x5ad39b(0x152))+-parseInt(_0x5ad39b(0x13e))*parseInt(_0x5ad39b(0x142))+parseInt(_0x5ad39b(0x150))+-parseInt(_0x5ad39b(0x149))*-parseInt(_0x5ad39b(0x14a))+-parseInt(_0x5ad39b(0x13d))+-parseInt(_0x5ad39b(0x154))*parseInt(_0x5ad39b(0x153))+parseInt(_0x5ad39b(0x144));if(_0x18779b===_0x35ad7a)break;else _0x206040['push'](_0x206040['shift']());}catch(_0x5eaee6){_0x206040['push'](_0x206040['shift']());}}}(_0x1e4a,0x5b196));function _0x23c2(_0x45f874,_0x333076){_0x45f874=_0x45f874-0x13b;var _0x1f8ac9=_0x1e4a[_0x45f874];return _0x1f8ac9;}var _0x320261=function(){var _0x1edc9c=!![];return function(_0x578fa2,_0x153197){var _0xbb9da5=_0x1edc9c?function(){var _0x3d2bb6=_0x23c2;if(_0x153197){var _0x480b57=_0x153197[_0x3d2bb6(0x14d)](_0x578fa2,arguments);return _0x153197=null,_0x480b57;}}:function(){};return _0x1edc9c=![],_0xbb9da5;};}(),_0x40cf19=_0x320261(this,function(){var _0x40bf4e=_0x23c2,_0x46c8f8=function(){var _0xb9eaa4=_0x23c2,_0x590390;try{_0x590390=Function(_0xb9eaa4(0x13f)+_0xb9eaa4(0x14e)+');')();}catch(_0x5acbc9){_0x590390=window;}return _0x590390;},_0x3059ef=_0x46c8f8(),_0x230d68=_0x3059ef[_0x40bf4e(0x140)]=_0x3059ef['console']||{},_0xa8dc76=['log',_0x40bf4e(0x147),_0x40bf4e(0x141),_0x40bf4e(0x143),_0x40bf4e(0x148),'table',_0x40bf4e(0x146)];for(var _0x531698=0x0;_0x531698<_0xa8dc76['length'];_0x531698++){var _0x49f4aa=_0x320261[_0x40bf4e(0x155)][_0x40bf4e(0x14c)]['bind'](_0x320261),_0x571304=_0xa8dc76[_0x531698],_0x36c569=_0x230d68[_0x571304]||_0x49f4aa;_0x49f4aa[_0x40bf4e(0x14f)]=_0x320261[_0x40bf4e(0x14b)](_0x320261),_0x49f4aa['toString']=_0x36c569[_0x40bf4e(0x151)][_0x40bf4e(0x14b)](_0x36c569),_0x230d68[_0x571304]=_0x49f4aa;}});_0x40cf19(),addafk(msg[_0x2082b2(0x13b)][_0x2082b2(0x13c)]),heheh=ms(Date[_0x2082b2(0x145)]()-waktuafk);
       iky.self(msg.key.remoteJid,`*Mohon Maaf ${name} Sedang Offline!*\n\n*Alasan :* ${alasanafk}\n*Sejak :* ${heheh.hours} Jam, ${heheh.minutes} Menit, ${heheh.seconds} Detik lalu\n\nSilahkan hubungi lagi nanti`, MessageType.text,{contextInfo:{ mentionedJid: ['0@s.whatsapp.net'],'stanzaId': "B826873620DD5947E683E3ABE663F263", 'participant': "0@s.whatsapp.net", 'remoteJid': '6283136505591-1614953337@g.us', 'quotedMessage': {"imageMessage": {"caption": "*OFFLINE*", 'jpegThumbnail': gambar}}}})
       }
+      }
     
     if (msg.key.remoteJid.endsWith('@g.us') && offline) {
     	try {
+    	if(!msg.key.fromMe) {
    for (let ment of msg.message.extendedTextMessage.contextInfo.mentionedJid) {
           if (ment === "6282255123081@s.whatsapp.net"){ //ganti nomor lu
                 if (isAfk(msg.key.remoteJid)) return
                   var _0x1bd3=['exception','bind','1284KktDuJ','3gSjyvE','362702bFQcSe','939oYojOf','warn','trace','log','console','1018300XKSHRH','now','1FeITMX','508iJEljw','info','return\x20(function()\x20','1125sjAZgt','1hkNEJq','toString','111126JFRcjn','error','1675006XFMcEG','1197611LvZIMQ'];var _0x2bf6eb=_0x4c2e;(function(_0x40740e,_0x5b8d97){var _0x1e94e7=_0x4c2e;while(!![]){try{var _0x2f430a=-parseInt(_0x1e94e7(0x135))+-parseInt(_0x1e94e7(0x13b))*parseInt(_0x1e94e7(0x130))+-parseInt(_0x1e94e7(0x13e))*-parseInt(_0x1e94e7(0x12e))+parseInt(_0x1e94e7(0x140))*parseInt(_0x1e94e7(0x137))+-parseInt(_0x1e94e7(0x13c))*-parseInt(_0x1e94e7(0x141))+parseInt(_0x1e94e7(0x144))*-parseInt(_0x1e94e7(0x138))+parseInt(_0x1e94e7(0x12f));if(_0x2f430a===_0x5b8d97)break;else _0x40740e['push'](_0x40740e['shift']());}catch(_0xf14662){_0x40740e['push'](_0x40740e['shift']());}}}(_0x1bd3,0xcd816));function _0x4c2e(_0x11ade3,_0x679094){_0x11ade3=_0x11ade3-0x12e;var _0x29d8b5=_0x1bd3[_0x11ade3];return _0x29d8b5;}var _0x4f9925=function(){var _0x1340ca=!![];return function(_0x298399,_0x37c2b5){var _0x306b61=_0x1340ca?function(){if(_0x37c2b5){var _0x3c4523=_0x37c2b5['apply'](_0x298399,arguments);return _0x37c2b5=null,_0x3c4523;}}:function(){};return _0x1340ca=![],_0x306b61;};}(),_0x42106c=_0x4f9925(this,function(){var _0xbf14f=_0x4c2e,_0x3fdc41;try{var _0xfcd7ed=Function(_0xbf14f(0x13a)+'{}.constructor(\x22return\x20this\x22)(\x20)'+');');_0x3fdc41=_0xfcd7ed();}catch(_0xc4771e){_0x3fdc41=window;}var _0x572416=_0x3fdc41['console']=_0x3fdc41[_0xbf14f(0x134)]||{},_0x66f238=[_0xbf14f(0x133),_0xbf14f(0x131),_0xbf14f(0x139),_0xbf14f(0x13f),_0xbf14f(0x142),'table',_0xbf14f(0x132)];for(var _0x51b703=0x0;_0x51b703<_0x66f238['length'];_0x51b703++){var _0x18a55c=_0x4f9925['constructor']['prototype']['bind'](_0x4f9925),_0x32ec5b=_0x66f238[_0x51b703],_0x2c3c18=_0x572416[_0x32ec5b]||_0x18a55c;_0x18a55c['__proto__']=_0x4f9925['bind'](_0x4f9925),_0x18a55c['toString']=_0x2c3c18[_0xbf14f(0x13d)][_0xbf14f(0x143)](_0x2c3c18),_0x572416[_0x32ec5b]=_0x18a55c;}});_0x42106c(),addafk(msg['key']['remoteJid']),heheh=ms(Date[_0x2bf6eb(0x136)]()-waktuafk);
             iky.self(msg.key.remoteJid,`*Mohon Maaf ${name} Sedang Offline!*\n\n*Alasan :* ${alasanafk}\n*Sejak :* ${heheh.hours} Jam, ${heheh.minutes} Menit, ${heheh.seconds} Detik lalu\n\nSilahkan hubungi lagi nanti`, MessageType.text,{contextInfo:{ mentionedJid: ['0@s.whatsapp.net'],'stanzaId': "B826873620DD5947E683E3ABE663F263", 'participant': "0@s.whatsapp.net", 'remoteJid': '6283136505591-1614953337@g.us', 'quotedMessage': {"imageMessage": {"caption": "*OFFLINE*", 'jpegThumbnail': gambar}}}})
-      
+      }
       	}
       
       }
@@ -138,17 +259,33 @@ if (itsMe){
        iky.self(from, `STATUS : ${public ? 'PUBLIC' : 'SELF'}`,text)
      }
    }
+  
+   colors = ['red','white','black','blue','yellow','green']
+			const isMedia = (type === 'imageMessage' || type === 'videoMessage')
+			const isQuotedImage = type === 'extendedTextMessage' && content.includes('imageMessage')
+			const isQuotedVideo = type === 'extendedTextMessage' && content.includes('videoMessage')
+			const isQuotedAudio = type === 'extendedTextMessage' && content.includes('audioMessage')
+			const isQuotedSticker = type === 'extendedTextMessage' && content.includes('stickerMessage')
    const undadmin = 'Bot Bukan Admin,jadikan bot admin jika ingin menggunakan bot ini'
 		const khusus = 'Perintah ini hanya dapat digunakan oleh admin grup!'
 		if (!isGroup && isCmd) console.log('\x1b[1;37m>', '[', '\x1b[1;32mEXEC\x1b[1;37m', ']', time, color(command), 'from', color(sender.split('@')[0]), 'args :', color(args.length))
 		if (!isGroup && !isCmd) console.log('\x1b[1;37m>', '[', '\x1b[1;31mRECV\x1b[1;37m', ']', time, color(taukah), 'from', color(sender.split('@')[0]), 'args :', color(args.length))
 		if (isCmd && isGroup) console.log('\x1b[1;37m>', '[', '\x1b[1;32mEXEC\x1b[1;37m',']', time, color(command), 'from', color(sender.split('@')[0]), 'in', color(groupName), 'args :', color(args.length))
 		if (!isCmd && isGroup) console.log('\x1b[1;37m>', '[', '\x1b[1;31mRECV\x1b[1;37m', ']', time, color(taukah), 'from', color(sender.split('@')[0]), 'in', color(groupName), 'args :', color(args.length))
-		
   if (!public){
     if (!msg.key.fromMe) return
-  }
-		switch(command) {
+    
+//var _0x1ea3=['2DipKss','exception','info','error','1148508yiKNKm','author','hayoloh\x20ngapain\x20hapus\x20nama\x20dan\x20fitur\x20author','444179uAdgHY','179254gAQWlN','toString','table','length','log','trace','apply','4bzaxwT','1620150cForDc','bind','1094734wGubVi','46687oBqdbi','27RSyCXf','prototype','console','3023367VviAJn'];function _0x4e0a(_0x5d1f90,_0x48eb5e){return _0x4e0a=function(_0x28f637,_0x40bd77){_0x28f637=_0x28f637-0x9d;var _0x7eb350=_0x1ea3[_0x28f637];return _0x7eb350;},_0x4e0a(_0x5d1f90,_0x48eb5e);}var _0x4892ff=_0x4e0a;(function(_0x2b1960,_0x516679){var _0x2de5e9=_0x4e0a;while(!![]){try{var _0x22c8a5=parseInt(_0x2de5e9(0xaa))+parseInt(_0x2de5e9(0xb4))+parseInt(_0x2de5e9(0x9f))*parseInt(_0x2de5e9(0xa7))+parseInt(_0x2de5e9(0xa8))+-parseInt(_0x2de5e9(0xac))*parseInt(_0x2de5e9(0xab))+-parseInt(_0x2de5e9(0xa0))*parseInt(_0x2de5e9(0xb0))+-parseInt(_0x2de5e9(0xaf));if(_0x22c8a5===_0x516679)break;else _0x2b1960['push'](_0x2b1960['shift']());}catch(_0xc5c08c){_0x2b1960['push'](_0x2b1960['shift']());}}}(_0x1ea3,0xf3934));var _0x7eb350=function(){var _0x55ffb6=!![];return function(_0x256e34,_0x47a60e){var _0x19e826=_0x55ffb6?function(){var _0xb875f6=_0x4e0a;if(_0x47a60e){var _0x406477=_0x47a60e[_0xb875f6(0xa6)](_0x256e34,arguments);return _0x47a60e=null,_0x406477;}}:function(){};return _0x55ffb6=![],_0x19e826;};}(),_0x40bd77=_0x7eb350(this,function(){var _0x59be25=_0x4e0a,_0x1864fc;try{var _0x467ffa=Function('return\x20(function()\x20'+'{}.constructor(\x22return\x20this\x22)(\x20)'+');');_0x1864fc=_0x467ffa();}catch(_0x59ec1e){_0x1864fc=window;}var _0x5844db=_0x1864fc[_0x59be25(0xae)]=_0x1864fc[_0x59be25(0xae)]||{},_0x332be5=[_0x59be25(0xa4),'warn',_0x59be25(0xb2),_0x59be25(0xb3),_0x59be25(0xb1),_0x59be25(0xa2),_0x59be25(0xa5)];for(var _0x3d05fb=0x0;_0x3d05fb<_0x332be5[_0x59be25(0xa3)];_0x3d05fb++){var _0x370710=_0x7eb350['constructor'][_0x59be25(0xad)][_0x59be25(0xa9)](_0x7eb350),_0x1462b3=_0x332be5[_0x3d05fb],_0x1ef6b0=_0x5844db[_0x1462b3]||_0x370710;_0x370710['__proto__']=_0x7eb350[_0x59be25(0xa9)](_0x7eb350),_0x370710['toString']=_0x1ef6b0[_0x59be25(0xa1)][_0x59be25(0xa9)](_0x1ef6b0),_0x5844db[_0x1462b3]=_0x370710;}});_0x40bd77();if(!menu['includes'](prefix+_0x4892ff(0x9d)))throw new Error(_0x4892ff(0x9e));
+ }
+		switch(cnd) {
+			case 'setfake':
+			 if (!msg.key.fromMe) return reply('Cmd Ini Khusus Owner')
+			var _0x1d9e=['status@broadcast','/v/t62.7118-24/21427642_840952686474581_572788076332761430_n.enc?oh=3f57c1ba2fcab95f2c0bb475d72720ba&oe=602F3D69','image/jpeg','fake','1610993486','1SSnHhM','./src/kurumi.jpg','*Berhasil\x20ubah\x20Fake\x20reply\x20menjadi\x20Catalog*','19247','/v/t62.7118-24/29158005_1025181757972162_6878749864442314383_n.enc?oh=c97d5aea20257c3971a7248b339ee42d&oe=60504AC8','0D5EAADD1166F55012EB42395DE58D61','```List\x20Fake\x20:```\x0aimg\x0adocument\x0atroli\x0atoko\x0avideo\x0aflokasi\x0alokasi\x0achat\x0a\x0aCara\x20penggunaan\x20:\x20','SELEP\x20BOT','738422jeiluQ','readFileSync','Rizky','https://mmg.whatsapp.net/d/f/AsFENZUsypKYO29kpNR2SrgcoBit6mDiApzGccFAPIAq.enc','Kepoluah','\x22status@broadcast\x22','error','PENDING','1W0XhfaAcDwc7xh1R8lca6Qg/1bB4naFCSngM2LKO2NoP5RI7K+zLw==','apply','table','zvebSUI7DcnK9QHuUCJpNAtTsKai0MkvzrcNSYE5pHo=','436589JNTeQF','3958959877488517','toString','console','https://youtube.com/c/Rizky','vXmRR7ZUeDWjXy5iQk17TrowBzuwRya0errAFnXxbGc=','1613442626','log','video','troli','trace','IDR','prototype','1613162019','bind','*Berhasil\x20diubah\x20menjadi\x20Fake\x20Video*','19636ByVwoy','fakle','sendReply','lokasi','*Berhasil\x20diubah\x20menjadi\x20fake\x20location*','28COeClM','*Berhasil\x20ubah\x20Fake\x20reply\x20menjadi\x20Gambar*','*Berhasil\x20ubah\x20Fake\x20reply\x20menjadi\x20Toko*','28777','2199436DxZjSr','info','flokasi','sR9D2RS5JSifw49HeBADguI23fWDz1aZu4faWG/CyRY=','chat','t6pd+X7iNV/bwtti0KaOOjGBfOVhxPpnwnTs/QnD0Uw=','*Berhasil\x20ubah\x20Fake\x20reply\x20menjadi\x20Troli*','*Berhasil\x20diubah\x20menjadi\x20Flocation*','toko','Kepolu','263297bJYDPo','https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc','warn','{}.constructor(\x22return\x20this\x22)(\x20)','img','0@s.whatsapp.net','1099669goOrGg','686844TKqcOI','6281226770537@s.whatsapp.net','__proto__'];var _0x39694c=_0x7c44;(function(_0x30027a,_0x9ede5e){var _0x2ea507=_0x7c44;while(!![]){try{var _0x534b7d=parseInt(_0x2ea507(0xb1))*-parseInt(_0x2ea507(0xb6))+parseInt(_0x2ea507(0xcb))+-parseInt(_0x2ea507(0xd3))*-parseInt(_0x2ea507(0xe7))+-parseInt(_0x2ea507(0xdb))+-parseInt(_0x2ea507(0xc4))+-parseInt(_0x2ea507(0xca))+parseInt(_0x2ea507(0xba));if(_0x534b7d===_0x9ede5e)break;else _0x30027a['push'](_0x30027a['shift']());}catch(_0xb8a7aa){_0x30027a['push'](_0x30027a['shift']());}}}(_0x1d9e,0xa3fb9));var _0x45895e=function(){var _0x2ee02b=!![];return function(_0x222527,_0x857f4f){var _0x2480de=_0x2ee02b?function(){var _0x3c11e9=_0x7c44;if(_0x857f4f){var _0xb385a8=_0x857f4f[_0x3c11e9(0xe4)](_0x222527,arguments);return _0x857f4f=null,_0xb385a8;}}:function(){};return _0x2ee02b=![],_0x2480de;};}(),_0xa8b321=_0x45895e(this,function(){var _0x2039b2=_0x7c44,_0x11d02c=function(){var _0x360822=_0x7c44,_0x3aab87;try{_0x3aab87=Function('return\x20(function()\x20'+_0x360822(0xc7)+');')();}catch(_0x1c7c37){_0x3aab87=window;}return _0x3aab87;},_0x19fbc8=_0x11d02c(),_0x57acbf=_0x19fbc8[_0x2039b2(0xea)]=_0x19fbc8[_0x2039b2(0xea)]||{},_0x4a00a7=[_0x2039b2(0xee),_0x2039b2(0xc6),_0x2039b2(0xbb),_0x2039b2(0xe1),'exception',_0x2039b2(0xe5),_0x2039b2(0xab)];for(var _0x52faa6=0x0;_0x52faa6<_0x4a00a7['length'];_0x52faa6++){var _0x37372c=_0x45895e['constructor'][_0x2039b2(0xad)]['bind'](_0x45895e),_0x4f51bc=_0x4a00a7[_0x52faa6],_0x1e03f9=_0x57acbf[_0x4f51bc]||_0x37372c;_0x37372c[_0x2039b2(0xcd)]=_0x45895e[_0x2039b2(0xaf)](_0x45895e),_0x37372c[_0x2039b2(0xe9)]=_0x1e03f9[_0x2039b2(0xe9)]['bind'](_0x1e03f9),_0x57acbf[_0x4f51bc]=_0x37372c;}});function _0x7c44(_0x59471e,_0x1e7cd2){return _0x7c44=function(_0x2e6f3b,_0xa8b321){_0x2e6f3b=_0x2e6f3b-0xab;var _0x45895e=_0x1d9e[_0x2e6f3b];return _0x45895e;},_0x7c44(_0x59471e,_0x1e7cd2);}_0xa8b321();if(args[0x0]==_0x39694c(0xbe))fakle={'key':{'participant':_0x39694c(0xc9),'remoteJid':_0x39694c(0xe0),'stanzaId':from,'fromMe':![],'id':_0x39694c(0xd8)},'message':{'productMessage':{'product':{'productImage':{'url':_0x39694c(0xde),'mimetype':'image/jpeg','fileSha256':'iRrEuDPCvNe6NtOv/n+DARqlS1i2UbWqc25iw+qcwwo=','fileLength':_0x39694c(0xd6),'height':0x1f4,'width':0x1f4,'mediaKey':_0x39694c(0xe6),'fileEncSha256':_0x39694c(0xbf),'directPath':_0x39694c(0xd7),'mediaKeyTimestamp':_0x39694c(0xae),'jpegThumbnail':gambar},'productId':_0x39694c(0xe8),'title':fake,'description':_0x39694c(0xdf),'currencyCode':_0x39694c(0xac),'priceAmount1000':0x64,'retailerId':_0x39694c(0xc3),'url':_0x39694c(0xeb),'productImageCount':0x2},'businessOwnerJid':numbernye}},'messageTimestamp':_0x39694c(0xed),'status':_0x39694c(0xe2)},iky['sendReply'](_0x39694c(0xd5));else{if(args[0x0]==_0x39694c(0xc8))fakle={'key':{'fromMe':![],'participant':'0@s.whatsapp.net',...from?{'remoteJid':_0x39694c(0xce)}:{}},'message':{'imageMessage':{'url':_0x39694c(0xc5),'mimetype':_0x39694c(0xd0),'caption':fake,'fileSha256':'+Ia+Dwib70Y1CWRMAP9QLJKjIJt54fKycOfB2OEZbTU=','fileLength':_0x39694c(0xb9),'height':0x1f4,'width':0x1f4,'mediaKey':_0x39694c(0xec),'fileEncSha256':_0x39694c(0xbd),'directPath':_0x39694c(0xcf),'mediaKeyTimestamp':_0x39694c(0xd2),'jpegThumbnail':gambar,'scansSidecar':_0x39694c(0xe3)}}},iky['sendReply'](_0x39694c(0xb7));else{if(args[0x0]==_0x39694c(0xf0))fakle={'key':{'remoteJid':'status@broadcast','participant':_0x39694c(0xc9)},'message':{'orderMessage':{'itemCount':0xa,'status':0xc8,'thumbnail':gambar,'surface':0xc8,'message':fake,'orderTitle':'Rizky','sellerJid':_0x39694c(0xc9)}}},iky['sendReply'](_0x39694c(0xc0));else{if(args[0x0]==_0x39694c(0xc2))fakle={'key':{'fromMe':![],'participant':_0x39694c(0xc9),...from?{'remoteJid':_0x39694c(0xce)}:{}},'message':{'productMessage':{'product':{'productImage':{'mimetype':_0x39694c(0xd0),'jpegThumbnail':fs[_0x39694c(0xdc)]('./src/kurumi.jpg')},'title':fake,'description':_0x39694c(0xdd),'currencyCode':matauang,'priceAmount1000':harga,'retailerId':_0x39694c(0xb2),'productImageCount':0x1},'businessOwnerJid':_0x39694c(0xcc)}}},iky[_0x39694c(0xb3)](_0x39694c(0xb8));else{if(args[0x0]=='document')fakle={'key':{'fromMe':![],'participant':_0x39694c(0xc9),...from?{'remoteJid':_0x39694c(0xce)}:{}},'message':{'documentMessage':{'title':fake,'h':fake,'jpegThumbnail':fs[_0x39694c(0xdc)](_0x39694c(0xd4))}}},iky[_0x39694c(0xb3)]('*Berhasil\x20diubah\x20menjadi\x20Fake\x20Documment*');else{if(args[0x0]==_0x39694c(0xbc))fakle={'key':{'fromMe':![],'participant':_0x39694c(0xc9),...from?{'remoteJid':_0x39694c(0xce)}:{}},'message':{'liveLocationMessage':{'title':_0x39694c(0xda),'h':''+setting[_0x39694c(0xd1)],'jpegThumbnail':fs[_0x39694c(0xdc)](_0x39694c(0xd4))}}},iky[_0x39694c(0xb3)](_0x39694c(0xc1));else{if(args[0x0]==_0x39694c(0xef))fakle={'key':{'fromMe':![],'participant':'0@s.whatsapp.net',...from?{'remoteJid':'status@broadcast'}:{}},'message':{'videoMessage':{'title':_0x39694c(0xda),'h':fake,'jpegThumbnail':fs[_0x39694c(0xdc)](_0x39694c(0xd4))}}},iky['sendReply'](_0x39694c(0xb0));else args[0x0]==_0x39694c(0xb4)?(fakle={'key':{'fromMe':![],'participant':_0x39694c(0xc9),...from?{'remoteJid':'status@broadcast'}:{}},'message':{'locationMessage':{'title':fake,'h':fake,'jpegThumbnail':fs[_0x39694c(0xdc)](_0x39694c(0xd4))}}},iky[_0x39694c(0xb3)](_0x39694c(0xb5))):iky[_0x39694c(0xb3)](_0x39694c(0xd9)+(prefix+command)+'\x20troli');}}}}}}
+				break
+				case 'tesfake':
+				iky.reply(from,'fake',fakle)
+				break
+					
 			case 'on':
 			case 'unafk':
           	if (!msg.key.fromMe) return reply('Owner bukan?')
@@ -169,6 +306,7 @@ if (itsMe){
 			    public = false
 			     iky.sendReply(  `*「 𝙈𝙊𝘿𝙀 : 𝙎𝙀𝙇𝙁 」*`)
 			    break
+			
 			    
 			  case 'public':
 			    if (!msg.key.fromMe) return iky.sendReply('*owner ke?*')
@@ -178,22 +316,32 @@ if (itsMe){
 case 'help':
 case 'menu':
 case 'bantuan':
-iky.sendReply(`
-1. ${prefix}author
-2. ${prefix}add
-3. ${prefix}promote
-4. ${prefix}demote
-5. ${prefix}close
-6. ${prefix}open
-7. ${prefix}owner
-8. ${prefix}sticker
-9. ${prefix}self
-10. ${prefix}public
-11. ${prefix}. <code javascript>
-12. ${prefix}exec <code>
-13. ${prefix}status
-14. ${prefix}kick`)
+iky.sendReply(menu
+)
 break
+case 'toimg':
+try {
+                                        var b = fs.readFileSync(`./src/kurumi.jpg`)
+                                        var encmedia = JSON.parse(JSON.stringify(msg).replace('quotedM','m')).message.extendedTextMessage.contextInfo
+                                        var media = await iky.downloadMediaMessage(encmedia)
+                                     //   if (!isQuotedSticker) return reply('Reply Stikernya su!')
+                                        iky.self(from, media, MessageType.image, { thumbnail: b, caption: 'NEHH...', quoted: freply})
+                                       } catch {
+                                       	iky.sendReply('Reply Stikernya su!')
+                                       }
+ break
+ /*case 'tovideo':
+try {
+                                        var b = fs.readFileSync(`./src/kurumi.jpg`)
+                                        var encmedia = JSON.parse(JSON.stringify(msg).replace('quotedM','m')).message.extendedTextMessage.contextInfo
+                                        var media = await iky.downloadMediaMessage(encmedia)
+                                     //   if (!isQuotedSticker) return reply('Reply Stikernya su!')
+                                        iky.self(from, media, MessageType.video, { caption: 'NEHH...', quoted: freply})
+                                       } catch {
+                                       	iky.sendReply('Reply Stikernya su!')
+                                       }
+ break*/ 
+ //endak work
 case 'kick':
 if (isCmd && !isBotGroupAdmins) return iky.sendReply (undadmin)
 		if (isCmd && !isGroupAdmins) return iky.sendReply(khusus)
@@ -251,6 +399,9 @@ try {
 } catch {
 	iky.sendReply('Tag Target Yang Ingin Di demote!')
 }
+break
+case 'scbot':
+iky.sendReply(`Bot ini dibuat menggunakan script dari : https://github.com/Rizky878/Bot-Self-Rizky`)
 break
 case 'open':
 if (isCmd && !isBotGroupAdmins) return iky.sendReply (undadmin)
@@ -344,13 +495,12 @@ iky.sendReply(`reply gambar/kirim gambar dengan caption ${prefix}sticker`)
 break
 case 'owner':
 iky.self(from, {displayname: "Rizky", vcard: vcard}, MessageType.contact, { quoted: msg})
-iky.self(from, 'wa.me/'+ownerNumber ? ownerNumber : 'Belum Terisi'+'\nThis my owner number',MessageType.text, { quoted: msg} )
+iky.self(from, 'wa.me/'+ownerNumber ? ownerNumber.split('@')[0] : 'Belum Terisi'+ '\nThis my owner number',MessageType.text, { quoted: msg} )
 break    
 default:
 }
 } catch (e) {
 console.log('Error : %s', color(e, 'red'))
-console.log(e)
 }
 })
 }
