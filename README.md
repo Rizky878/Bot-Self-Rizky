@@ -62,7 +62,7 @@ Make sure your bot is on!!
 |       ✅        |   Afk (alasan)       |
 |       ✅        |   On (kembali dari afk)       |
 |       ✅        |   Function nurutomo       |
-|       ❌        |   toimg       |
+|       ✅        |   toimg       |
 
 
 ## Special Thanks to
