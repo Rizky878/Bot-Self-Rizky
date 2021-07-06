@@ -18,7 +18,7 @@
 <br><br>## Clone this project
 
 ```bash
-> git clone https://github.com/Rizky878/bot-group
+> git clone https://github.com/Rizky878/Bot-Self-Rizky
 ```
 
 ## Install the dependencies:
@@ -26,7 +26,7 @@ Before running the below command, make sure you're in the project directory that
 you've just cloned!!
 
 ```bash
-> cd bot-group
+> cd Bot-Self-Rizky
 > bash install.sh
 ```
 
